@@ -1,0 +1,355 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: verdana;
+  color: #5ca4d6;
+}
+
+ul.products {
+  float: left;
+  width: 410px;
+  padding: 35px 0 0 0;
+  margin: 0 auto;
+}
+
+li.products {
+  list-style: none;
+  margin-left: 50px;
+  position: relative;
+  margin-right: 0;
+  border: 3px solid #5ca4d6;
+}
+
+i.fa.fa-undo {
+  border-left: 3px solid #5ca4d6;
+  border-bottom: 3px solid #5ca4d6;
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 5px 7px;
+}
+
+img.t-shirt-front {
+  width: 81%;
+  opacity: 0.90;
+  height: auto;
+  margin: 30px 0 30px 25px;
+  position: relative;
+  z-index: 2;
+}
+
+/*
+
+Shop box elements
+
+*/
+
+div.shop-box {
+  border-top: 3px solid #5ca4d6;
+  height: 50px;
+}
+
+ul.icons {
+  padding-left: 0;
+  width: 100%;
+}
+
+p.icons {
+  font-size: 18px;
+  margin: 0;
+  line-height: 50px;
+}
+
+li.icons {
+  list-style: none;
+  float: left;
+  height: auto;
+  line-height: 50px;
+  width: 20%;
+  border-left: 3px solid #5ca4d6;
+}
+
+li.icons:first-child {
+  border-left: none;
+}
+
+li.icons:hover,
+i.fa-undo:hover {
+  background: #5ca4d6;
+  color: #fff;
+}
+
+p {
+  padding-left: 30%;
+}
+
+i.fa {
+  font-weight: bold;
+  font-size: 20px;
+  padding-left: 33%;
+}
+
+li #product1-square,
+li #product2-square,
+li #product3-square {
+  margin: 10px 0 10px 20px;
+  width: 30px;
+  height: 30px;
+  border: 3px solid #fff;
+}
+
+#product1-square {
+	background: #82BBE4;
+}
+
+#product2-square {
+	background: #d583ac;
+}
+
+#product3-square {
+	background: #deb17e;
+}
+
+li.shirt-colors,
+li.shirt-sizes {
+  list-style: none;
+}
+
+
+/*
+
+Shirt sizes menu
+
+*/
+
+li.shirt-sizes {
+  position: relative;
+  display: inline-block;
+}
+
+li.shirt-sizes:hover div.shirt-sizes {
+  opacity: 1;
+  top: -206px;
+}
+
+div.shirt-sizes {
+  border: 3px solid #5ca4d6;
+  background: #fff;
+  width: 88px;
+  position: absolute;
+  opacity: 0;
+  top: -231px;
+  left: -10px;
+  z-index: 5;
+  transition: opacity .3s ease-in-out;
+}
+
+.icon-t-shirt {
+  color: #5ca4d6;
+}
+
+li.triangle {
+  line-height: 30px;
+  list-style: none;
+}
+
+span.white-triangle-shirt {
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 11px 9.5px 0 9.5px;
+  border-color: #fff transparent transparent transparent;
+  position: absolute;
+  z-index: 1;
+  bottom: -10px;
+  left: 31px;
+}
+
+span.blue-triangle-shirt {
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 13px 10.5px 0 10.5px;
+  border-color: #5ca3d6 transparent transparent transparent;
+  position: absolute;
+  bottom: -15px;
+  left: 30px;
+}
+
+p.shirt-sizes {
+  position: relative;
+}
+
+li.icons.shirt-sizes {
+  line-height: 30px;
+}
+p.x-large, p.large, p.medium, p.small {
+  margin: 0 0 0 11px;
+}
+
+p.x-large {
+  padding-top: 27px;
+  padding-left: 4px;
+}
+
+p.large {
+  padding: 5px 0 0 7px;
+}
+
+p.medium {
+  padding: 5px 0 0 10px;
+}
+
+p.small {
+  padding: 5px 0 20px 13px;
+}
+
+.shirt-text-x-large {
+  font-size: 10px;
+  position: absolute;
+  top: 31px;
+  left: 24px;
+}
+
+.shirt-text-large {
+  font-size: 10px;
+  position: absolute;
+  top: 6px;
+  left: 26px;
+}
+
+.shirt-text-medium {
+  font-size: 10px;
+  position: absolute;
+  top: 6px;
+  left: 25px;
+}
+
+.shirt-text-small {
+  font-size: 10px;
+  position: absolute;
+  top: 6px;
+  left: 25px;
+}
+
+.icon-x-large, .icon-large, .icon-medium, .icon-small {
+  line-height: 25px;
+}
+
+.icon-x-large {
+  font-size: 37px;
+}
+
+.icon-large {
+  font-size: 32px;
+}
+
+.icon-medium {
+  font-size: 27px;
+}
+
+.icon-small {
+  font-size: 22px;
+}
+
+ul.shirt-sizes {
+  padding: 0;
+}
+
+/*
+
+Shirt colors menu
+
+*/
+
+li.shirt-colors {
+  position: relative;
+  display: inline-block;
+  line-height: 30px;
+}
+
+div.color-menu {
+  padding-left: 8px;
+}
+
+li.shirt-colors:hover div.shirt-colors {
+  opacity: 1;
+  top: -89px;
+}
+
+
+div.shirt-colors {
+  border: 3px solid #5ca4d6;
+  background: #fff;
+  opacity: 0;
+  width: 88px;
+  position: absolute;
+  top: -114px;
+  left: -9px;
+  z-index: 5;
+  transition: opacity .3s ease-in-out;
+}
+
+li.shirt-colors:first-child {
+  padding-top: 7px;
+}
+
+ul.shirt-colors {
+  padding: 0;
+  height: 83px;
+}
+
+.blue-square {
+	width: 30px;
+	height: 30px;
+	background: #82BBE4;
+}
+
+.pink-square {
+	width: 30px;
+	height: 30px;
+	background: #d583ac;
+}
+
+.yellow-square {
+	width: 30px;
+	height: 30px;
+	background: #deb17e;
+}
+
+.green-square {
+	width: 30px;
+	height: 30px;
+	background: #8bb992;
+}
+
+/*
+
+Bottom product info - name & product-price
+
+*/
+
+li.product-name-price {
+  list-style: none;
+}
+
+li.product-name,
+li.product-price {
+  list-style: none;
+  padding-top: 15px;
+  font-size: 27px;
+  font-family: "avenir";
+}
+
+li.product-name {
+  float: left;
+  padding-left: 15px;
+}
+
+li.product-price {
+  float: right;
+  padding-right: 5px;
+  font-weight: bold;
+}
