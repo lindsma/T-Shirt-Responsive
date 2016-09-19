@@ -102,7 +102,16 @@ i.fa {
 
 li #product1-square,
 li #product2-square,
-li #product3-square {
+li #product3-square,
+li #product4-square,
+li #product5-square,
+li #product6-square,
+li #product7-square,
+li #product8-square,
+li #product9-square,
+li #product10-square,
+li #product11-square,
+li #product12-square {
   margin: 10px 0 10px 20px;
   width: 30px;
   height: 30px;
@@ -119,6 +128,42 @@ li #product3-square {
 
 #product3-square {
 	background: #deb17e;
+}
+
+#product4-square {
+	background: #800000;
+}
+
+#product5-square {
+	background: #00ffff;
+}
+
+#product6-square {
+	background: #000080;
+}
+
+#product7-square {
+	background: #B57EDC;
+}
+
+#product8-square {
+	background: #71EEB8;
+}
+
+#product9-square {
+	background: #33FF46;
+}
+
+#product10-square {
+	background: #FF5733;
+}
+
+#product11-square {
+	background: #581845;
+}
+
+#product12-square {
+	background: #FF33B2;
 }
 
 li.shirt-colors,
@@ -335,6 +380,69 @@ ul.shirt-colors {
 	height: 30px;
 	background: #8bb992;
 }
+
+.navy-square {
+	width: 30px;
+	height: 30px;
+	background: #000080;
+}
+
+.maroon-square {
+	width: 30px;
+	height: 30px;
+	background: #800000;
+}
+
+.cyan-square {
+	width: 30px;
+	height: 30px;
+	background: #00ffff;
+}
+
+.canary-yellow-square {
+	width: 30px;
+	height: 30px;
+	background: #ffef00;
+}
+
+.lavender-square {
+	width: 30px;
+	height: 30px;
+	background: #B57EDC;
+}
+
+.seafoam-green-square {
+	width: 30px;
+	height: 30px;
+	background: #71EEB8;
+}
+
+.bright-green-square {
+	width: 30px;
+	height: 30px;
+	background: #33FF46;
+}
+
+.eggplant-square {
+  width: 30px;
+	height: 30px;
+	background: #581845;
+}
+
+.orange-square {
+  width: 30px;
+	height: 30px;
+	background: #FF5733;
+}
+
+.bright-pink-square {
+  width: 30px;
+  height: 30px;
+  background: #FF33B2;
+}
+
+
+
 
 /*
 
