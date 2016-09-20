@@ -7,18 +7,49 @@ body {
   color: #5ca4d6;
 }
 
+
+nav div.menu {
+  background: #333;
+  height: 50px;
+}
+
+nav ul {
+  float: right;
+}
+
+nav ul li {
+  float: left;
+}
+
+li.menu {
+  padding-right: 30px;
+}
+
+li.menu:last-child {
+  padding-right: 40px;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+ul.menu {
+  list-style: none;
+}
+
 ul.products {
   float: left;
-  width: 410px;
-  padding: 35px 0 0 0;
+  width: 25%;
+  padding: 20px 10px;
   margin: 0 auto;
+  transition: width .5s ease;
 }
 
 li.products {
   list-style: none;
-  margin-left: 50px;
+  margin: 0 auto;
   position: relative;
-  margin-right: 0;
   border: 3px solid #5ca4d6;
 }
 
@@ -58,6 +89,7 @@ Shop box elements
 div.shop-box {
   border-top: 3px solid #5ca4d6;
   height: 50px;
+  transition: height .5s ease;
 }
 
 ul.icons {
@@ -67,7 +99,8 @@ ul.icons {
 
 p.icons {
   font-size: 18px;
-  margin: 0;
+  margin: 0 auto;
+  padding: 0;
   line-height: 50px;
 }
 
@@ -78,6 +111,7 @@ li.icons {
   line-height: 50px;
   width: 20%;
   border-left: 3px solid #5ca4d6;
+  text-align: center;
 }
 
 li.icons:first-child {
@@ -97,24 +131,11 @@ p {
 i.fa {
   font-weight: bold;
   font-size: 20px;
-  padding-left: 33%;
+  margin: 0 auto;
 }
 
-li #product1-square,
-li #product2-square,
-li #product3-square,
-li #product4-square,
-li #product5-square,
-li #product6-square,
-li #product7-square,
-li #product8-square,
-li #product9-square,
-li #product10-square,
-li #product11-square,
-li #product12-square {
-  margin: 10px 0 10px 20px;
-  width: 30px;
-  height: 30px;
+.main.square {
+  margin: 10px auto;
   border: 3px solid #fff;
 }
 
@@ -171,7 +192,6 @@ li.shirt-sizes {
   list-style: none;
 }
 
-
 /*
 
 Shirt sizes menu
@@ -185,18 +205,18 @@ li.shirt-sizes {
 
 li.shirt-sizes:hover div.shirt-sizes {
   opacity: 1;
-  top: -206px;
+  top: -163px;
   z-index: 5;
 }
 
 div.shirt-sizes {
   border: 3px solid #5ca4d6;
   background: #fff;
-  width: 88px;
+  width: 70px;
   position: absolute;
   opacity: 0;
-  top: -231px;
-  left: -10px;
+  top: -183px;
+  left: -8px;
   z-index: -1;
   transition: all .3s ease-in-out;
 }
@@ -210,7 +230,7 @@ li.triangle {
   list-style: none;
 }
 
-span.white-triangle-shirt {
+span.white-triangle-shirt-sizes {
   width: 0;
   height: 0;
   border-style: solid;
@@ -219,10 +239,10 @@ span.white-triangle-shirt {
   position: absolute;
   z-index: 1;
   bottom: -10px;
-  left: 31px;
+  left: 23px;
 }
 
-span.blue-triangle-shirt {
+span.blue-triangle-shirt-sizes {
   width: 0;
   height: 0;
   border-style: solid;
@@ -230,63 +250,56 @@ span.blue-triangle-shirt {
   border-color: #5ca3d6 transparent transparent transparent;
   position: absolute;
   bottom: -15px;
-  left: 30px;
-}
-
-p.shirt-sizes {
-  position: relative;
+  left: 22px;
 }
 
 li.icons.shirt-sizes {
   line-height: 30px;
 }
 p.x-large, p.large, p.medium, p.small {
-  margin: 0 0 0 11px;
+  margin: 0 auto;
 }
+
 
 p.x-large {
-  padding-top: 27px;
-  padding-left: 4px;
+  padding-top: 10px;
 }
 
-p.large {
-  padding: 5px 0 0 7px;
+p.large, p.medium, p.small {
+  padding-top: 3px;
 }
 
-p.medium {
-  padding: 5px 0 0 10px;
-}
-
-p.small {
-  padding: 5px 0 20px 13px;
+p.shirt-sizes {
+  position: relative;
+  padding-left: 0;
 }
 
 .shirt-text-x-large {
   font-size: 10px;
   position: absolute;
-  top: 31px;
-  left: 24px;
+  top: 18px;
+  left: 20px;
 }
 
 .shirt-text-large {
   font-size: 10px;
   position: absolute;
-  top: 6px;
-  left: 26px;
+  top: 7px;
+  left: 20px;
 }
 
 .shirt-text-medium {
   font-size: 10px;
   position: absolute;
-  top: 6px;
-  left: 25px;
+  top: 5px;
+  left: 15px;
 }
 
 .shirt-text-small {
   font-size: 10px;
   position: absolute;
   top: 6px;
-  left: 25px;
+  left: 12px;
 }
 
 .icon-x-large, .icon-large, .icon-medium, .icon-small {
@@ -295,6 +308,7 @@ p.small {
 
 .icon-x-large {
   font-size: 37px;
+  margin: 0;
 }
 
 .icon-large {
@@ -326,7 +340,7 @@ li.shirt-colors {
 }
 
 div.color-menu {
-  padding-left: 8px;
+  padding-left: 1px;
 }
 
 li.icons.shirt-colors:hover div.shirt-colors {
@@ -340,12 +354,35 @@ div.shirt-colors {
   border: 3px solid #5ca4d6;
   background: #fff;
   opacity: 0;
-  width: 88px;
+  width: 80px;
   position: absolute;
   top: -114px;
-  left: -9px;
+  left: -13px;
   z-index: -1;
   transition: all .3s ease-in;
+}
+
+span.white-triangle-shirt-colors {
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 11px 9.5px 0 9.5px;
+  border-color: #fff transparent transparent transparent;
+  position: absolute;
+  z-index: 1;
+  bottom: -10px;
+  left: 29px;
+}
+
+span.blue-triangle-shirt-colors {
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 13px 10.5px 0 10.5px;
+  border-color: #5ca3d6 transparent transparent transparent;
+  position: absolute;
+  bottom: -15px;
+  left: 28px;
 }
 
 li.shirt-colors:first-child {
@@ -357,92 +394,66 @@ ul.shirt-colors {
   height: 83px;
 }
 
-.blue-square {
-	width: 30px;
-	height: 30px;
+.square {
+  width: 30px;
+  height: 30px;
+}
+
+.blue {
 	background: #82BBE4;
 }
 
-.pink-square {
-	width: 30px;
-	height: 30px;
+.pink {
 	background: #d583ac;
 }
 
-.yellow-square {
-	width: 30px;
-	height: 30px;
+.yellow {
 	background: #deb17e;
 }
 
-.green-square {
-	width: 30px;
-	height: 30px;
+.green {
 	background: #8bb992;
 }
 
-.navy-square {
-	width: 30px;
-	height: 30px;
+.navy {
 	background: #000080;
 }
 
-.maroon-square {
-	width: 30px;
-	height: 30px;
+.maroon {
 	background: #800000;
 }
 
-.cyan-square {
-	width: 30px;
-	height: 30px;
+.cyan {
 	background: #00ffff;
 }
 
-.canary-yellow-square {
-	width: 30px;
-	height: 30px;
+.canary-yellow {
 	background: #ffef00;
 }
 
-.lavender-square {
-	width: 30px;
-	height: 30px;
+.lavender {
 	background: #B57EDC;
 }
 
-.seafoam-green-square {
-	width: 30px;
-	height: 30px;
+.seafoam-green {
 	background: #71EEB8;
 }
 
-.bright-green-square {
-	width: 30px;
-	height: 30px;
+.bright-green {
 	background: #33FF46;
 }
 
-.eggplant-square {
-  width: 30px;
-	height: 30px;
+.eggplant {
 	background: #581845;
 }
 
-.orange-square {
-  width: 30px;
-	height: 30px;
+.orange {
 	background: #FF5733;
 }
 
-.bright-pink-square {
-  width: 30px;
-  height: 30px;
+.bright-pink {
   background: #FF33B2;
 }
-
-
-
 
 /*
 
@@ -454,26 +465,135 @@ li.product-name-price {
   list-style: none;
 }
 
+ul.product-name-price {
+  padding: 0;
+  margin: 0;
+}
+
 li.product-name,
 li.product-price {
   list-style: none;
-  padding-top: 15px;
-  font-size: 27px;
+  padding-top: 10px;
+  font-size: 21px;
   font-family: "avenir";
 }
 
 li.product-name {
   float: left;
-  padding-left: 15px;
+  padding-left: 5px;
 }
 
 li.product-price {
   float: right;
-  padding-right: 5px;
   font-weight: bold;
+  padding-right: 5px;
 }
 
 
-@@media only screen and (max-width: 1000px) {
+@media only screen and (max-width: 1050px) {
+
+  body {
+    width: 100%;
+    height: auto;
+  }
+  ul.products {
+    width: 33%;
+  }
+
+}
+
+@media only screen and (max-width: 775px) {
+
+  body {
+    width: 100%;
+    height: auto;
+  }
+  ul.products {
+    width: 50%;
+  }
+
+  li.product-name,
+  li.product-price {
+    font-size: 20px;
+  }
+
+}
+
+@media only screen and (max-width: 450px) {
+
+  body {
+    width: 100%;
+    height: auto;
+  }
+  ul.products {
+    width: 50%;
+    padding: 10px;
+  }
+
+  li.product-name,
+  li.product-price {
+    font-size: 16px;
+    padding: 0;
+    width: 100%;
+  }
+
+
+  .square {
+    width: 22px;
+    height: 22px;
+  }
+
+  i.fa {
+    font-size: 18px;
+  }
+
+  p.icons {
+    font-size: 16px;
+  }
+
+  p.icons, li.icons {
+    line-height: 40px;
+  }
+
+  div.shop-box {
+    height: 120px;
+  }
+
+  nav {
+    display: none;
+  }
+
+  img.t-shirt-front {
+    width: 81%;
+    height: auto;
+    margin: 30px 10px 15px 10px;
+  }
+
+
+  ul.icons {
+    width: 100%;
+  }
+
+  li.icons {
+    list-style: none;
+    float: left;
+    height: 40px;
+    width: 50%;
+    display: block;
+    border: none;
+    border-bottom: 3px solid #5ca4d6;
+    padding: 0;
+    margin: 0;
+  }
+
+  li.icons:first-child,
+  li.icons:nth-child(3) {
+    border-right: 3px solid #5ca4d6;
+  }
+
+  li.icons:nth-child(5) {
+    width: 100%;
+    border-bottom: none;
+  }
 
 }
